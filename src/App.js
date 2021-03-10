@@ -1,11 +1,12 @@
 
+import "./App.css";
+import Home from '../src/pages/home/index'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          placeholder
-        </p>
+       <Home/>
       </header>
     </div>
   );

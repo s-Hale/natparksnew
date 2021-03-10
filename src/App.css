@@ -1,14 +1,19 @@
 .App {
   text-align: center;
+  font-family: Tahoma;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.alerts-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+align-items: center;
+  border: 1px solid red;
+}
+
+.alert-card {
+  border: 1px solid darkslategray;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 24rem;
+  margin: 2rem;
 }
