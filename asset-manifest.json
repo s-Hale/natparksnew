@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/natparksnew/static/js/main.1faaea3f.chunk.js",
-    "main.js.map": "/natparksnew/static/js/main.1faaea3f.chunk.js.map",
+    "main.css": "/natparksnew/static/css/main.b0244aa7.chunk.css",
+    "main.js": "/natparksnew/static/js/main.6dbe1e45.chunk.js",
+    "main.js.map": "/natparksnew/static/js/main.6dbe1e45.chunk.js.map",
     "runtime-main.js": "/natparksnew/static/js/runtime-main.cc092eda.js",
     "runtime-main.js.map": "/natparksnew/static/js/runtime-main.cc092eda.js.map",
-    "static/js/2.8a6beb4c.chunk.js": "/natparksnew/static/js/2.8a6beb4c.chunk.js",
-    "static/js/2.8a6beb4c.chunk.js.map": "/natparksnew/static/js/2.8a6beb4c.chunk.js.map",
+    "static/js/2.62df7a4a.chunk.js": "/natparksnew/static/js/2.62df7a4a.chunk.js",
+    "static/js/2.62df7a4a.chunk.js.map": "/natparksnew/static/js/2.62df7a4a.chunk.js.map",
     "index.html": "/natparksnew/index.html",
-    "static/js/2.8a6beb4c.chunk.js.LICENSE.txt": "/natparksnew/static/js/2.8a6beb4c.chunk.js.LICENSE.txt"
+    "static/css/main.b0244aa7.chunk.css.map": "/natparksnew/static/css/main.b0244aa7.chunk.css.map",
+    "static/js/2.62df7a4a.chunk.js.LICENSE.txt": "/natparksnew/static/js/2.62df7a4a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cc092eda.js",
-    "static/js/2.8a6beb4c.chunk.js",
-    "static/js/main.1faaea3f.chunk.js"
+    "static/js/2.62df7a4a.chunk.js",
+    "static/css/main.b0244aa7.chunk.css",
+    "static/js/main.6dbe1e45.chunk.js"
   ]
 }
