@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/natparksnew/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/natparksnew/static/js/main.4cde34cf.chunk.js",
+    "main.js.map": "/natparksnew/static/js/main.4cde34cf.chunk.js.map",
+    "runtime-main.js": "/natparksnew/static/js/runtime-main.79e6ddc0.js",
+    "runtime-main.js.map": "/natparksnew/static/js/runtime-main.79e6ddc0.js.map",
+    "static/js/2.b30e27bf.chunk.js": "/natparksnew/static/js/2.b30e27bf.chunk.js",
+    "static/js/2.b30e27bf.chunk.js.map": "/natparksnew/static/js/2.b30e27bf.chunk.js.map",
+    "static/js/3.19e3541d.chunk.js": "/natparksnew/static/js/3.19e3541d.chunk.js",
+    "static/js/3.19e3541d.chunk.js.map": "/natparksnew/static/js/3.19e3541d.chunk.js.map",
+    "index.html": "/natparksnew/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/natparksnew/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.b30e27bf.chunk.js.LICENSE.txt": "/natparksnew/static/js/2.b30e27bf.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/natparksnew/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79e6ddc0.js",
+    "static/js/2.b30e27bf.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.4cde34cf.chunk.js"
+  ]
+}
