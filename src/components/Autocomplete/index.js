@@ -81,13 +81,21 @@ const Autocomplete = ({options}) => {
     }
     return(
         <div className="search">
-            <input type="text" className="search-box" onChange={onChange} onKeyDown={onKeyDown} value={userInput}/>
+
+            <input type="text" className="border-2 border-gray-500 rounded-xl text-lg p-4 w-full focus:outline-none focus:border-blue-300" onChange={onChange} onKeyDown={onKeyDown} value={userInput}/>
 
             {optionList}
+
 
         </div>
     );
 };
+
+// .search {
+//     width: 32rem;
+//     margin: 10rem auto 2rem auto;
+
+//   }
 
 Autocomplete.propTypes = {
     options: arrayOf(shape({})).isRequired

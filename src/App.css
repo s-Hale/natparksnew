@@ -1,3 +1,6 @@
+
+
+
 body {
   font-family: Josefin Sans;
   background-image: url("https://www.dropbox.com/s/5t4xaf98yfwhdys/fog-foggy-forest-4827.jpg?raw=1");
@@ -11,12 +14,70 @@ body {
   width: 15rem;
 }
 
+.img-row {
+  text-align: center;
+}
+
+/* .back-button {
+  text-align: center;
+  width: 5rem;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  margin: 1rem 4rem;
+} */
+
+
+
+/* .park-page-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.park-title {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.park-description {
+  margin: 1rem 1rem 1rem 2rem;
+} */
+
+/* .park-image {
+  width: 15rem;
+  margin-left: 4rem;
+} */
+
+/* .left-col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+} */
+
+/* .campgrounds-wrap {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+} */
+
+/* .campground {
+display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid lightgray;
+  padding: 1em;
+  border-radius: 12px;
+  color: black;
+  margin: 1em;
+  padding: 3em;
+} */
+
+
+/*
+
 .alerts-wrap {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
-  float: right;
-width: 60%;
 
 }
 
@@ -24,37 +85,35 @@ width: 60%;
   border: 1px dotted slategray;
   border-radius: 12px;
   padding: 2rem;
-  width: 14rem;
+  width: 18rem;
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.img-row {
-  text-align: center;
-}
+ */
 
-.alertIcon {
+/* .alertIcon {
   height: 80px;
-}
+} */
 
 .search {
   width: 32rem;
   margin: 10rem auto 2rem auto;
 
 }
-.search-box {
+/* .search-box {
   border: 2px solid darkslatgegray;
   border-radius: 2px;
   font-size: 2rem;
   color: rgb(88, 88, 88);
   width: 100%;
   padding: 1rem;
-}
-.search-box:focus {
+} */
+/* .search-box:focus {
   width: 100%;
   outline: none;
   border: 2px solid #08a1b6;
-}
+} */
 
 ul.options {
 
@@ -75,7 +134,7 @@ ul.options a {
   padding: 10px;
   font-size: 1.2rem;
   color:rgb(88, 88, 88);
-  width: 33rem;
+  width: 32rem;
   border-radius: 2px;
 }
 ul.options a:hover {
