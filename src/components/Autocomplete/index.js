@@ -61,7 +61,10 @@ const Autocomplete = ({options}) => {
                         }
                         return (
                             <Link
-                                to={{ pathname: `/park/${option.parkCode}`}} className={className} key={option.parkCode} onClick={onClick}>
+                                to={{pathname: `/park/${option.parkCode}`}}
+                                className={className}
+                                key={option.parkCode}
+                                onClick={onClick}>
                                 {option.name}
                             </Link>
                         );

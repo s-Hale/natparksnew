@@ -6,11 +6,18 @@ body {
   background-repeat: no-repeat;
 
 }
-/*
+
+.image {
+  width: 15rem;
+}
+
 .alerts-wrap {
   display: flex;
-  flex: 1;
+  flex-flow: row wrap;
   justify-content: flex-end;
+  float: right;
+width: 60%;
+
 }
 
 .alert-card {
@@ -28,7 +35,7 @@ body {
 
 .alertIcon {
   height: 80px;
-} */
+}
 
 .search {
   width: 32rem;
