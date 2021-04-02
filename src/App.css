@@ -1,19 +1,95 @@
-.App {
-  text-align: center;
-  font-family: Tahoma;
-}
+body {
+  font-family: Josefin Sans;
+  background-image: url("https://www.dropbox.com/s/5t4xaf98yfwhdys/fog-foggy-forest-4827.jpg?raw=1");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
+}
+/*
 .alerts-wrap {
   display: flex;
-  flex-direction: column;
-align-items: center;
-  border: 1px solid red;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .alert-card {
-  border: 1px solid darkslategray;
-  border-radius: 8px;
+  border: 1px dotted slategray;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 14rem;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-row {
+  text-align: center;
+}
+
+.alertIcon {
+  height: 80px;
+} */
+
+.search {
+  width: 32rem;
+  margin: 10rem auto 2rem auto;
+
+}
+.search-box {
+  border: 2px solid darkslatgegray;
+  border-radius: 2px;
+  font-size: 2rem;
+  color: rgb(88, 88, 88);
+  width: 100%;
   padding: 1rem;
-  width: 24rem;
-  margin: 2rem;
+}
+.search-box:focus {
+  width: 100%;
+  outline: none;
+  border: 2px solid #08a1b6;
+}
+
+ul.options {
+
+  list-style: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 10px;
+
+}
+
+ul.options a {
+
+  background: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0px -10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  color:rgb(88, 88, 88);
+  width: 33rem;
+  border-radius: 2px;
+}
+ul.options a:hover {
+  font-weight: bold;
+  color: #00b4cc;
+  cursor: pointer;
+
+}
+
+ul.options a:visited {
+  font-weight: bold;
+  color:rgb(88, 88, 88);
+  cursor: pointer;
+
+}
+
+ul.options a.option-active {
+  background: whitesmoke;
+  font-size: 1.5rem;
+  color: #00b4cc;
+}
+.no-options {
+  color: white;
 }

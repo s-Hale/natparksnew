@@ -1,24 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import AlertCard from '../home/components/AlertCard/index'
-import fetchAlerts from '../../api/api.js'
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import Autocomplete from './../../components/Autocomplete/index';
+import parkCodes from './assets/parkcodes.js';
+
 const Home = () => {
-    const [alerts, setAlerts] = useState([])
 
-    useEffect(()=> {
-      fetchAlerts('glac').then(res => {
-      setAlerts(res.data);
-   })
-  }, [])
 
- return (
-     <div className="alerts-wrap">
-   <>
-     {alerts.map((alert, i) => (
-        <AlertCard alertData={alert} key={i}/>
-     ))}
- </>
- </div>
- )
-}
+    return (
+        <>
+            <Autocomplete options={parkCodes}/>
+        </>
+    );
+};
+
 
 export default Home;
