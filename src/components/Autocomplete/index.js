@@ -73,29 +73,23 @@ const Autocomplete = ({options}) => {
             );
         } else {
             optionList = (
-                <div className="no-options">
-                    <em>No Option</em>
+                <div className="text-gray-500 ml-2 mt-1">
+                    <em>None found</em>
                 </div>
             );
         }
     }
     return(
-        <div className="search">
 
+        <div className="w-2/6 mt-40 m-auto mb-8 m-auto">
+            <h3 className="text-4xl mb-3 ml-2 text-gray-800">Start your adventure here</h3>
             <input type="text" className="border-2 border-gray-500 rounded-xl text-lg p-4 w-full focus:outline-none focus:border-blue-300" onChange={onChange} onKeyDown={onKeyDown} value={userInput}/>
-
             {optionList}
-
-
         </div>
+
+
     );
 };
-
-// .search {
-//     width: 32rem;
-//     margin: 10rem auto 2rem auto;
-
-//   }
 
 Autocomplete.propTypes = {
     options: arrayOf(shape({})).isRequired
