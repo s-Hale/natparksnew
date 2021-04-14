@@ -1,18 +1,19 @@
 import React from 'react';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 
-const AlertCard = ({ alertData }) => (
-    <div className="border border-dotted border-gray-500 rounded-lg bg-gray-200 p-8 m-4 w-96">
+
+const AlertCard = ({ alertData, cardStyle }) => (
+    <div className={cardStyle}>
         <h3 className="text-xl">
             {alertData.title}
         </h3>
-        <div className="flex justify-center">
-            <img
-                className="w-20 my-8"
-                alt="bear"
-                src="https://www.dropbox.com/s/ncqh09fv2b6jvlg/bear.png?raw=1"
-            />
-        </div>
+
+        <img
+            className="w-20 my-2"
+            alt="bear"
+            src="https://www.dropbox.com/s/ncqh09fv2b6jvlg/bear.png?raw=1"
+        />
+
         <p>
             {alertData.description}
         </p>
@@ -20,7 +21,8 @@ const AlertCard = ({ alertData }) => (
 );
 
 AlertCard.propTypes = {
-    alertData: shape({}).isRequired
+    alertData: shape({}).isRequired,
+    cardStyle: string.isRequired
 };
 
 export default AlertCard;

@@ -56,3 +56,19 @@ ul.options a.option-active {
 .no-options {
   color: white;
 }
+
+.tab-list-item {
+  list-style: none;
+  border: 1px solid darkslategray;
+  padding: 1rem 3rem;
+}
+
+.tab-list-item:hover {
+ cursor: pointer;
+ background: rgb(203, 210, 218);
+}
+
+.tab-list-active {
+  background-color: rgb(197, 235, 223);
+  border-width: 1px 1px 0 1px;
+}

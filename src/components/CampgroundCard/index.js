@@ -1,19 +1,18 @@
 
 import React from 'react';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 
-const CampgroundCard = ({ campground }) => (
-    <div className="flex bg-gray-100 border border-gray-500 p-4 my-4 mx-8 rounded-xl justify-between">
-        <div className="flex flex-col mr-6">
-            <h2 className="font-bold text-lg my-4">{campground.name}</h2>
-            <p className="text">{campground.description}</p>
-        </div>
-        {campground.images[0] && (<img className="w-48 max-h-40" src={`${campground.images[0].url}`}></img>)}
+const CampgroundCard = ({ campground, cardStyle }) => (
+    <div className={cardStyle}>
+        <h2 className="text-2xl">{campground.name}</h2>
+        <p>{campground.description}</p>
+        {campground.images[0] && (<img className="w-40 my-4" src={`${campground.images[0].url}`}></img>)}
     </div>
 );
 
 CampgroundCard.propTypes = {
-    campground: shape({}).isRequired
+    campground: shape({}).isRequired,
+    cardStyle: string.isRequired
 };
 
 export default CampgroundCard;

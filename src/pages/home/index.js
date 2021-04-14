@@ -12,7 +12,7 @@ const Home = () =>
     <>
         <Autocomplete options={parkCodes}/>
 
-        <div className="mt-10 flex justify-center pr-4">
+        <div className="mt-10 flex flex-wrap justify-center pr-4">
             <img className="w-24 mx-6" src={glacierIcon}></img>
             <img className="w-24 mx-6" src={canyonIcon}></img>
             <img className="w-24 mx-6" src={desertIcon}></img>
