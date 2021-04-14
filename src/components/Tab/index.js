@@ -8,10 +8,10 @@ const Tab = ({activeTab, label, onClickTab}) => {
         onClickTab(label);
     };
 
-    let className = 'tab-list-item';
+    let className = 'tab-list-item text-gray-400 list-none px-8 py-4 hover:bg-gray-300 cursor-pointer';
 
     if (activeTab === label) {
-        className += ' tab-list-active';
+        className += ' tab-list-active bg-gray-300 border-b-4 border-gray-500';
     }
     return (
         <li

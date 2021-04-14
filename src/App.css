@@ -1,15 +1,10 @@
 
 body {
   font-family: Josefin Sans;
-  background-image: url("https://www.dropbox.com/s/5t4xaf98yfwhdys/fog-foggy-forest-4827.jpg?raw=1");
+  background: url("https://www.dropbox.com/s/5t4xaf98yfwhdys/fog-foggy-forest-4827.jpg?raw=1");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-}
-
-.image {
-  width: 15rem;
 }
 
 ul.options {
@@ -57,18 +52,6 @@ ul.options a.option-active {
   color: white;
 }
 
-.tab-list-item {
-  list-style: none;
-  border: 1px solid darkslategray;
-  padding: 1rem 3rem;
-}
-
-.tab-list-item:hover {
- cursor: pointer;
- background: rgb(203, 210, 218);
-}
-
 .tab-list-active {
-  background-color: rgb(197, 235, 223);
-  border-width: 1px 1px 0 1px;
+  color: black;
 }

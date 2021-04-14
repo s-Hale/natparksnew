@@ -4,7 +4,7 @@ import Tab from '../Tab/';
 // import { shape } from 'prop-types';
 
 const Tabs = ({children}) => {
-    const [activeTab, setActiveTab]=useState(0);
+    const [activeTab, setActiveTab]=useState('Things to do');
 
     const onClickTab = (tab) => {
         setActiveTab(tab );
@@ -12,7 +12,7 @@ const Tabs = ({children}) => {
 
     return (<div>
         <div className="tabs">
-            <ol className="tab-list flex border-gray-500 bg-gray-100">
+            <ol className="tab-list flex">
                 {children.map((child) => {
                     const { label } = child.props;
 
@@ -26,7 +26,7 @@ const Tabs = ({children}) => {
                     );
                 })}
             </ol>
-            <div className="tab-content ">
+            <div className="tab-content">
                 {children.map((child) => {
                     if (child.props.label !== activeTab) return undefined;
                     return child.props.children;
