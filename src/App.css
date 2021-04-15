@@ -7,6 +7,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.lato {
+ font-family: Lato;
+}
+
 ul.options {
   list-style: none;
   width: 100%;

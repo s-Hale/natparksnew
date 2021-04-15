@@ -4,3 +4,14 @@
 
 *work in progress using the [National Parks API](https://www.nps.gov/subjects/developer/guides.htm "API Guide")*
 
+**Hosted at** https://s-hale.github.io/natparksnew/#/
+
+### Aims
+
+* Tailwind CSS
+* React Testing Library
+* Typeahead, tab, pagination etc
+* Grid to keep cards uniform
+* User favourites
+* A11y
+

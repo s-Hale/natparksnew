@@ -3,15 +3,20 @@
 import React from 'react';
 import { shape } from 'prop-types';
 
-const ActivityCard = ({ activityData, cardStyle }) => (
-    <div className={cardStyle}>
-        <div className="text-2xl">{activityData.title}</div>
-        <div className="flex justify-center">
-            <img className="w-56 my-4" src={`${activityData.images[0].url}`}></img>
+const ActivityCard = ({ activityData, cardStyle }) => {
+
+    const truncateDescription =(string) => string && string.length > 140 ? string.slice(0, 138).split(' ').slice(0, -1).join(' ') + ('...') : string;
+
+    return(
+        <div className={cardStyle}>
+            <div className="h-24 m-4">
+                <h2 className="text-2xl">{activityData.title}</h2>
+            </div>
+            {activityData.images[0] && <div className="w-full h-40" style={{background: 'url(' + activityData.images[0].url + ')', backgroundSize: 'cover'}}></div>}
+            <div className="m-4">{truncateDescription(activityData.shortDescription)}</div>
         </div>
-        <div>{activityData.shortDescription}</div>
-    </div>
-);
+    );
+};
 
 ActivityCard.propTypes = {
     alertData: shape({}).isRequired

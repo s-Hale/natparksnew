@@ -5,7 +5,7 @@ import bearIcon from '../assets/bear.png';
 
 const AlertCard = ({ alertData, cardStyle }) => (
     <div className={cardStyle}>
-        <h3 className="text-xl">
+        <h3 className="text-xl m-4">
             {alertData.title}
         </h3>
         <div className="flex justify-center">
@@ -15,9 +15,9 @@ const AlertCard = ({ alertData, cardStyle }) => (
                 src={bearIcon}
             />
         </div>
-        <p>
+        <div className="m-4">
             {alertData.description}
-        </p>
+        </div>
     </div>
 );
 

@@ -34,9 +34,8 @@ const Park = ({match}) => {
             });
     }, []);
 
-    const cardStyle = 'border border-gray-500 rounded-xl bg-gray-100 p-4 m-2 w-72';
+    const cardStyle = 'flex flex-col border border-gray-500 rounded-xl bg-gray-100 m-2 w-72';
     const cardArrangement = 'flex flex-wrap justify-center';
-
     if (loading) return null;
     return (
         <>
@@ -46,10 +45,10 @@ const Park = ({match}) => {
                     <h3 className="text-4xl mt-8">{parkInfo.fullName}</h3>
                     <div className="my-4">{parkInfo.description}</div>
                     <img className="my-8 w-80" src={`${parkInfo.images[0].url}`}></img>
-                    <button className="text-center w-32 px-8 py-4 mb-4 bg-gray-100 border rounded-xl border-gray-500 text-lg" onClick={() => history.goBack()}>Back</button>
+                    <button className="text-center w-32 px-8 py-4 mb-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
                 </div>
 
-                <div className="w-3/4 border border-gray-500 bg-white bg-opacity-80">
+                <div className="w-3/4 border border-gray-400 bg-white bg-opacity-80">
                     <Tabs>
                         <div label="Things to do">
                             <div className={cardArrangement}>
