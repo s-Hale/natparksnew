@@ -13,7 +13,7 @@ const ActivityCard = ({ activityData, cardStyle }) => {
                 <h2 className="text-2xl">{activityData.title}</h2>
             </div>
             {activityData.images[0] && <div className="w-full h-40" style={{background: 'url(' + activityData.images[0].url + ')', backgroundSize: 'cover'}}></div>}
-            <div className="m-4">{truncateDescription(activityData.shortDescription)}</div>
+            <div className="m-4"><p className="noto text-gray-600 tracking-wide">{truncateDescription(activityData.shortDescription)}</p></div>
         </div>
     );
 };
