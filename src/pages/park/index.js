@@ -6,6 +6,7 @@ import AlertCard from '../../components/AlertCard/';
 import ActivityCard from '../../components/ActivityCard/';
 import CampgroundCard from '../../components/CampgroundCard/';
 import Tabs from '../../components/Tabs';
+import ParkHeader from '../../components/ParkHeader/';
 
 import {fetchAlerts, fetchParkInfo, fetchCampgrounds, fetchThingsToDo} from '../../api/api.js';
 
@@ -39,14 +40,9 @@ const Park = ({match}) => {
     if (loading) return null;
     return (
         <>
-
+            <button className="text-center w-28 px-8 py-4 m-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
             <div className="flex flex-col items-center">
-                <div className="w-3/4">
-                    <h3 className="text-4xl mt-8">{parkInfo.fullName}</h3>
-                    <div className="my-4">{parkInfo.description}</div>
-                    <img className="my-8 w-80" src={`${parkInfo.images[0].url}`}></img>
-                    <button className="text-center w-32 px-8 py-4 mb-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
-                </div>
+                <ParkHeader parkInfo={parkInfo}/>
 
                 <div className="w-3/4 border border-gray-400 bg-white bg-opacity-80">
                     <Tabs>
