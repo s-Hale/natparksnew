@@ -40,7 +40,7 @@ const Park = ({match}) => {
     if (loading) return null;
     return (
         <>
-            <button className="text-center w-28 px-8 py-4 m-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
+            <button className="text-center w-24 sm:w-28 px-8 py-4 m-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
             <div className="flex flex-col items-center">
                 <ParkHeader parkInfo={parkInfo}/>
 
