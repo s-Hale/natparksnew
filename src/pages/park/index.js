@@ -35,16 +35,18 @@ const Park = ({match}) => {
             });
     }, []);
 
-    const cardStyle = 'flex flex-col border border-gray-500 rounded-xl bg-gray-100 m-2 w-72';
+    const cardStyle = 'flex flex-col border border-gray-400 rounded-xl bg-gray-100 bg-opacity-80 m-2 w-72';
+    const alertCardStyle = 'flex flex-col justify-between border border-gray-400 rounded-xl bg-gray-100 bg-opacity-80 m-2 w-72';
+
     const cardArrangement = 'flex flex-wrap justify-center';
     if (loading) return null;
     return (
         <>
-            <button className="text-center w-24 sm:w-28 px-8 py-4 m-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
+            <button className="sticky top-4 text-center w-24 sm:w-28 px-8 py-2 m-4 bg-gray-100 border-2 rounded-xl border-gray-400 text-lg" onClick={() => history.goBack()}>Back</button>
             <div className="flex flex-col items-center">
                 <ParkHeader parkInfo={parkInfo}/>
 
-                <div className="w-3/4 border border-gray-400 bg-white bg-opacity-80">
+                <div className="w-3/4 border border-gray-100 rounded-md bg-white bg-opacity-60">
                     <Tabs>
                         <div label="Things to do">
                             <div className={cardArrangement}>
@@ -66,7 +68,7 @@ const Park = ({match}) => {
                         <div label="Alerts">
                             <div className={cardArrangement}>
                                 {alerts.map((alert, i) =>
-                                    <AlertCard key={i} alertData={alerts[i]} cardStyle={cardStyle}/>
+                                    <AlertCard key={i} alertData={alerts[i]} cardStyle={alertCardStyle}/>
                                 )}
                             </div>
                         </div>
