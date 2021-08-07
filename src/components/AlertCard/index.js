@@ -5,18 +5,20 @@ import bearIcon from '../assets/bear.png';
 
 const AlertCard = ({ alertData, cardStyle }) => (
     <div className={cardStyle}>
-        <h3 className="text-xl m-4">
-            {alertData.title}
-        </h3>
-        <div className="flex justify-center">
+
+        <div className="m-4">
+            <h2 className="text-2xl text-gray-700">{alertData.title}</h2>
+        </div>
+
+        <div className="m-4">
+            {alertData.description}
+        </div>
+        <div className="flex justify-end">
             <img
-                className="w-20 my-2"
+                className="w-20 m-2"
                 alt="bear"
                 src={bearIcon}
             />
-        </div>
-        <div className="m-4">
-            {alertData.description}
         </div>
     </div>
 );

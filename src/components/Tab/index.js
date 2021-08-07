@@ -8,10 +8,10 @@ const Tab = ({activeTab, label, onClickTab}) => {
         onClickTab(label);
     };
 
-    let className = 'tab-list-item text-gray-400 list-none px-8 py-4 hover:bg-gray-300 cursor-pointer w-1/3 md:w-44 text-center';
+    let className = 'tab-list-item text-gray-500 list-none px-8 py-4 hover:bg-gray-300 cursor-pointer w-1/3 md:w-44 text-center';
 
     if (activeTab === label) {
-        className += 'tab-list-active bg-gray-300 border-b-4 border-gray-500 text-gray-900 w-1/3 md:w-44 text-center';
+        className += 'tab-list-active bg-gray-300 border-b-4 border-gray-500 text-gray-700 w-1/3 md:w-44 text-center';
     }
     return (
         <li

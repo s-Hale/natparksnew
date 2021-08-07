@@ -19,7 +19,7 @@ const CampgroundCard = ({ campground, cardStyle }) => {
     return (
         <div className={cardStyle}>
             <div className="h-20 m-4">
-                <h2 className="text-2xl">{campground.name}</h2>
+                <h2 className="text-2xl text-gray-700">{campground.name}</h2>
             </div>
             {campground.images[0] && <div className="w-full h-40" style={{background: 'url(' + campground.images[0].url + ')', backgroundSize: 'cover'}}></div>}
             <div className="mx-2 mt-2 mb-8"><p className="noto text-gray-600 tracking-wide">{truncateDescription(campground.description)}</p></div>

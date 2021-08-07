@@ -1,7 +1,8 @@
 
+
 body {
   font-family: Josefin Sans;
-  background: url("https://www.dropbox.com/s/5t4xaf98yfwhdys/fog-foggy-forest-4827.jpg?raw=1");
+  background: url("./components/assets/fog-foggy-forest-4827.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
